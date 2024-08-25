@@ -19,7 +19,7 @@ export default function Home() {
     try {
       const parsedData = JSON.parse(jsonInput); // Validate JSON input
       const response = await axios.post(
-        "http://13.234.240.179:3000/bfhl",
+        "https://surya-back.praki.tech/bfhl",
         parsedData
       );
       setResponseData(response.data);
