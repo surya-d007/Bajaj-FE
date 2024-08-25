@@ -92,6 +92,14 @@ export default function Home() {
       />
       {error && <p className="text-red-500 mt-2">{error}</p>}
 
+      <button
+        onClick={handleSubmit}
+        className="mt-4 p-2 bg-blue-500 text-white rounded"
+      >
+        Submit
+      </button>
+
+       
       <div className="mt-4 flex gap-4">
         <div className="bg-violet-500 text-black  rounded-md">
           {selectedOptions.includes("numbers") && (
@@ -113,12 +121,6 @@ export default function Home() {
           )}
         </div>
       </div>
-      <button
-        onClick={handleSubmit}
-        className="mt-4 p-2 bg-blue-500 text-white rounded"
-      >
-        Submit
-      </button>
       {responseData && (
         <>
           {showCriteriaDropdown && (
